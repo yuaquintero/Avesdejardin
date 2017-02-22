@@ -9,6 +9,16 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="@drawable/fondo"
-    tools:context="com.example.administrador.avesdejardin.MainActivity">
+    android:background="@drawable/fondo2"
+    tools:context="com.example.administrador.avesdejardin.MainActivity"
+    android:weightSum="1">
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:id="@+id/button"
+        android:height="@dimen/activity_vertical_margin"
+        tools:ignore="RtlSymmetry" />
+
+
 </LinearLayout>
