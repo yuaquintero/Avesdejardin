@@ -27,7 +27,6 @@ public class LugarTuristico {
      *
      * @param _nombre
      * @param _direccion
-     * @param _servicios
      * @param _telefono
      * @param _email
      * @param _distancia

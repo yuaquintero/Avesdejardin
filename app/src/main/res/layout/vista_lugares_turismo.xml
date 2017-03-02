@@ -14,7 +14,6 @@
         android:gravity="center"
         android:padding="16dp"
         android:text="@string/tituloturismo"
-        android:textColor="@color/brown"
         android:textStyle="bold"
         android:textSize="16dp"/>
 
@@ -32,22 +31,6 @@
             android:layout_height="144dp"
             android:id="@+id/relativeLayout">
 
-            <ImageView
-                android:id="@+id/iv_tur"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@android:drawable/ic_menu_view"
-                android:layout_alignParentStart="true" />
-
-            <TextView
-                android:id="@+id/tVtextositio"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Restaurante, truchera y mas"
-                android:textColor="@color/black"
-                android:layout_below="@+id/iv_tur"
-                android:layout_centerHorizontal="true" />
-
             <TextView
 
                 android:id="@+id/tVsitio"
@@ -60,13 +43,32 @@
                 android:layout_alignParentTop="true"
                 android:layout_alignParentStart="true" />
 
+            <ImageView
+                android:id="@+id/iv_tur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@android:drawable/ic_menu_view"
+                android:layout_marginStart="20dp"
+                android:layout_above="@+id/ratingBar"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:id="@+id/tVtextositio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Restaurante, truchera y mas"
+                android:textColor="@color/black"
+                android:layout_alignTop="@+id/iv_tur"
+                android:layout_toEndOf="@+id/iv_tur"
+                android:layout_marginStart="71dp" />
+
             <RatingBar
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/ratingBar"
-                android:layout_below="@+id/tVtextositio"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="18dp" />
+                android:layout_alignParentBottom="true"
+                android:layout_toEndOf="@+id/iv_tur"
+                android:layout_marginStart="38dp" />
 
 
         </RelativeLayout>
